@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="profile">
+        <div id="menu">
+          <!-- Dropdown with all the feature -->
+            <input type="checkbox" id="check">
+            <label for="check">
+              <i class="fas fa-bars" id="btn"></i>
+              <i class="fas fa-times" id="cancel"></i>
+            </label>
+          <div class="sidebar">
+            <header>Feature</header>
+            <ul>
+              <li><a href="#"><i class="fas fa-envelope"></i>Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Image and user name -->
+          <div id="pic">
+            
+          </div>
+      </div>
+      <div id="text" class="textContent">
+        <!-- Email send button -->
+        <button id="send">Send</button>
+        <!-- user data -->
+        <div id="nameInput">
+          <table>
+            <tr>
+              <td><Label>To:</Label></td>
+              <td><input type="text" id="nameList" list="names" placeholder="Enter the Email ID"></td>
+              <td><datalist id="names"></datalist> </td>
+            </tr>
+            <tr>
+              <td><Label>Subject:</Label></td>
+              <td><input type="text" id="subject" list="name" placeholder="Enter the subject"></td>
+            </tr>
+            <tr>
+              <td><Label>Body:</Label></td>
+              <td id="inp3"><input type="text" id="body" list="name" placeholder="Enter the body"></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Response -->
+        <div id="response"></div>
+      </div>
+    </div>
+    <script src="js/helpers.js"></script>
+    <script src="components/router.js"></script>
+    <script src="components/autocomplete.js"></script>
+    <script src="components/modal.js"></script>
+    <script src="components/table.js"></script>
+    <script src="components/floatingactionbutton.js"></script>
+    <script src="https://unpkg.com/ryuu.js"></script>
+    <script src="https://unpkg.com/@domoinc/domo-phoenix/build/global/domoPhoenixWithMaps.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
